@@ -8,7 +8,7 @@ def predict_sentiment(text):
     if classifier is None:
         classifier = pipeline(
             "sentiment-analysis",
-            model="distilbert-base-uncased-finetuned-sst-2-english",
+            model="cardiffnlp/twitter-roberta-base-sentiment",
             device=-1
         )
 
